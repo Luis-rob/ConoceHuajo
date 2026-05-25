@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago Huajolotitlán - Noticias</title>
+    <link rel="stylesheet" href="noticias.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="costumbres.html">Costumbres</a></li>
+            <li><a href="gastronomia.html">Gastronomía</a></li>
+            <li><a href="noticias.html" class="active">Noticias</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" style="background-image: url('https://via.placeholder.com/1920x1080/1A252F/FFFFFF?text=Fondo+Noticias+Comunidad');">
+        <div class="hero-content">
+            <h1>Noticias e Interacción</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="curio-box">
+            <h2>¿Sabías que...?</h2>
+            <p id="factTextBox">Haz clic en el botón de abajo para extraer un dato curioso e importante sobre nuestro pueblo de la base de datos local.</p>
+            <button id="btnTriggerFact">Generar Dato Curioso</button>
+        </div>
+
+        <h2 style="margin-top: 40px; color: var(--primary);">Espacio de Novedades</h2>
+        <div class="news-feed">
+            <div class="news-card">
+                <h3>Obras en el Río Mixteco</h3>
+                <p>Se reportan avances significativos en la limpieza y reforestación de las áreas circundantes al río.</p>
+            </div>
+            <div class="news-card">
+                <h3>Convocatoria Folklórica</h3>
+                <p>El comité organizador abre inscripciones para los jóvenes interesados en unirse a la delegación oficial.</p>
+            </div>
+        </div>
+
+        <div class="form-wrapper">
+            <h2>Mándanos tus Recomendaciones</h2>
+            <form id="feedbackForm" novalidate>
+                <div class="input-control">
+                    <label>Tu Nombre Completo</label>
+                    <input type="text" id="usrName" required>
+                </div>
+                <div class="input-control">
+                    <label>Correo Electrónico de Contacto</label>
+                    <input type="email" id="usrEmail" required>
+                    <small class="error-text">Escribe una dirección válida con @ y dominio (.com, .es, etc.)</small>
+                </div>
+                <div class="input-control">
+                    <label>¿Qué agregarías a esta página web?</label>
+                    <textarea id="usrMsg" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Sugerencia</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="noticias.js"></script>
+</body>
+</html>

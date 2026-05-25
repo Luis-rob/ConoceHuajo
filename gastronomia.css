@@ -1,0 +1,63 @@
+:root {
+    --primary: #8E2800;
+    --secondary: #2E5A44;
+    --accent: #E69A28;
+    --bg: #FBF7F0;
+    --text: #1A252F;
+    --white: #FFFFFF;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { background-color: var(--bg); color: var(--text); }
+
+.navbar {
+    position: fixed; top: 0; width: 100%; background: darkblue;
+    padding: 15px 30px; display: flex; justify-content: flex-start;
+    z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.navbar a { color: var(--text); text-decoration: none; font-weight: bold; transition: 0.3s; }
+.navbar a:hover, .navbar a.active { color: var(--text); }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links a { color: var(--white); text-decoration: none; font-weight: bold; transition: 0.3s; }
+.nav-links a:hover, .nav-links a.active { color: var(--accent) }
+
+.hero {
+    text-align: center;
+    height: 45vh; background-size: cover; background-position: center;
+    display: flex; align-items: center; justify-content: center; position: relative;
+    background-image: url("gastronomia.jpeg");
+}
+.hero h1 { 
+    position: relative; 
+    z-index: 2; 
+    font-size: 3rem;
+    text-decoration-color: white;
+    color: white;
+}
+
+.container { max-width: 900px; margin: 40px auto; padding: 20px; }
+h2 { color: var(--primary); margin-bottom: 20px; text-align: center; }
+
+.accordion { margin-bottom: 40px; }
+.accordion-item { background: var(--white); margin-bottom: 12px; border-radius: 6px; overflow: hidden; box-shadow: 0 3px 10px rgba(0,0,0,0.05); }
+.accordion-header {
+    width: 100%; background: var(--primary); color: var(--white); text-align: left;
+    padding: 18px; font-size: 1.1rem; font-weight: bold; border: none; cursor: pointer;
+    transition: background 0.3s; display: flex; justify-content: space-between;
+}
+.accordion-header:hover { background: #b33602; }
+.accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0, 1, 0, 1); padding: 0 18px; }
+
+.section-title { margin-top: 50px; color: var(--secondary); }
+.geo-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 20px; }
+.geo-info h3 { color: var(--secondary); margin-top: 15px; margin-bottom: 5px; }
+.geo-info ul { margin-left: 20px; margin-top: 10px; }
+.templo {
+    width: 350px;
+    transition: 0.3s;
+    border: 4px solid black;
+}
+
+.templo:hover {
+    transform: scale(1.05);
+}
