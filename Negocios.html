@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negocios de la Comunidad</title>
+    <link rel="stylesheet" href="Negocios.css">
+</head>
+<body>
+
+    <section class="comunidad-negocios">
+        <div class="header-seccion">
+            <h2>Apoya lo Local</h2>
+            <p>Descubre y conecta con los comercios y emprendimientos de nuestra comunidad.</p>
+            
+            <div class="buscador-container">
+                <input type="text" id="buscador" placeholder="¿Qué estás buscando? (Ej: Café, Ropa...)">
+                <select id="filtro-categoria">
+                    <option value="todos">Todas las categorías</option>
+                    <option value="gastronomia">Gastronomía</option>
+                    <option value="servicios">Servicios</option>
+                    <option value="tiendas">Tiendas y Moda</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="grid-negocios" id="grid-negocios">
+            
+            <div class="tarjeta-negocio" data-categoria="gastronomia">
+                <div class="imagen-negocio placeholder-cafe">☕</div>
+                <div class="info-negocio">
+                    <span class="categoria-tag">Gastronomía</span>
+                    <h3>Café "El Encuentro"</h3>
+                    <p>El mejor café artesanal con granos locales y repostería recién horneada todos los días.</p>
+                    <div class="contacto-negocio">
+                        <span>📍 Calle Principal #123</span>
+                        <span>📞 555-0192</span>
+                    </div>
+                    <a href="#" class="btn-visitar">Ver más</a>
+                </div>
+            </div>
+
+            <div class="tarjeta-negocio" data-categoria="servicios">
+                <div class="imagen-negocio placeholder-taller">🛠️</div>
+                <div class="info-negocio">
+                    <span class="categoria-tag">Servicios</span>
+                    <h3>Taller Mecánico Astro</h3>
+                    <p>Reparación, mantenimiento preventivo y diagnóstico computarizado multimarca.</p>
+                    <div class="contacto-negocio">
+                        <span>📍 Av. Central #456</span>
+                        <span>📞 555-0483</span>
+                    </div>
+                    <a href="#" class="btn-visitar">Ver más</a>
+                </div>
+            </div>
+
+            <div class="tarjeta-negocio" data-categoria="tiendas">
+                <div class="imagen-negocio placeholder-moda">🛍️</div>
+                <div class="info-negocio">
+                    <span class="categoria-tag">Tiendas y Moda</span>
+                    <h3>Boutique Nueva Imagen</h3>
+                    <p>Ropa y accesorios en tendencia para toda la familia con sistema de apartado.</p>
+                    <div class="contacto-negocio">
+                        <span>📍 Centro Comercial Local, Local 5</span>
+                        <span>📞 555-0711</span>
+                    </div>
+                    <a href="#" class="btn-visitar">Ver más</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="Negocios.js"></script>
+</body>
+</html>

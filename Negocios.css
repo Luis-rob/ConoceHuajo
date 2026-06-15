@@ -1,0 +1,158 @@
+/* Estilos Generales del Apartado (Scoped) */
+.comunidad-negocios {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #333;
+}
+
+.header-seccion {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header-seccion h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.header-seccion p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Buscador */
+.buscador-container {
+    display: flex;
+    gap: 15px;
+    max-width: 600px;
+    margin: 25px auto 0 auto;
+}
+
+.buscador-container input, 
+.buscador-container select {
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.buscador-container input {
+    flex-grow: 2;
+}
+
+.buscador-container select {
+    flex-grow: 1;
+    background-color: white;
+    cursor: pointer;
+}
+
+.buscador-container input:focus, 
+.buscador-container select:focus {
+    border-color: #3498db;
+}
+
+/* Grid de Tarjetas */
+.grid-negocios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Tarjeta Individual */
+.tarjeta-negocio {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-negocio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Placeholders de imágenes usando emojis de fondo */
+.imagen-negocio {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+.placeholder-cafe { background-color: #ffeaa7; }
+.placeholder-taller { background-color: #dfe6e9; }
+.placeholder-moda { background-color: #fab1a0; }
+
+.info-negocio {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.categoria-tag {
+    align-self: flex-start;
+    background: #e1f5fe;
+    color: #0288d1;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.info-negocio h3 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    font-size: 1.3rem;
+}
+
+.info-negocio p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+    flex-grow: 1;
+}
+
+.contacto-negocio {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.btn-visitar {
+    text-align: center;
+    background: #3498db;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn-visitar:hover {
+    background: #2980b9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .buscador-container {
+        flex-direction: column;
+    }
+}
