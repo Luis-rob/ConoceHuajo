@@ -7,7 +7,7 @@
 }
 
 .navbar {
-    position: fixed; top: 0; width: 100%; background: var(--primary);
+    position: fixed; top: 0; width: 100%; background: DARKBLUE;
     padding: 15px 30px; display: flex; justify-content: space-between; align-items: center;
     z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
