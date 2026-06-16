@@ -167,7 +167,6 @@
     background: #2980b9;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
     .buscador-container {
         flex-direction: column;
