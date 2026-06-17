@@ -108,7 +108,7 @@ h2 {
 }
 
 .card[data-category="comida"]{
-    background-image: url("muertos.jpeg");
+    background-image: url("");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
