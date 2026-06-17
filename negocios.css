@@ -79,7 +79,7 @@ h2 {
 }
 
 .card[data-category="tiendas"]{
-    background-image: url("mini.jpg");
+    background-image: url("mini.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
