@@ -1,7 +1,5 @@
-// JS COMPLEJO: Algoritmo de validación de expresiones regulares (RegEx) en tiempo real más motor cíclico de estados sin repetición consecutiva
 document.addEventListener('DOMContentLoaded', () => {
     
-    // Parte 1: Generador controlado anti-repeticiones
     const curiosidades = [
         "El nombre 'Huajolotitlán' proviene de la lengua Náhuatl y hace alusión a un territorio poblado por pavos silvestres.",
         "Su iglesia tiene un marcado estilo dominico barroco del periodo virreinal temprano.",
@@ -17,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     factBtn.addEventListener('click', () => {
         let currentSelection;
-        // Algoritmo do-while para garantizar que el nuevo dato sea diferente al anterior
         do {
             currentSelection = Math.floor(Math.random() * curiosidades.length);
         } while (currentSelection === lastIndex);
@@ -35,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.addEventListener('submit', (event) => {
         event.preventDefault();
-        // Regex robusto estándar W3C para correos electrónicos
         const emailRegex = /^[a-zA-Z0-0._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         const errorMsg = document.querySelector('.error-text');
 
@@ -43,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
             emailInput.classList.add('shake-trigger');
             errorMsg.style.display = 'block';
             
-            // Remover la clase de animación para que se pueda volver a activar en el próximo envío fallido
             setTimeout(() => {
                 emailInput.classList.remove('shake-trigger');
             }, 400);
