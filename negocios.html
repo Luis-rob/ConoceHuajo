@@ -23,69 +23,37 @@
         </div>
     </header>
 
-    <section class="comunidad-negocios">
-        <div class="header-seccion">
-            <h2>Apoya lo Local</h2>
-            <p>Descubre y conecta con los comercios y emprendimientos de nuestra comunidad.</p>
-            
-            <div class="buscador-container">
-                <input type="text" id="buscador" placeholder="¿Qué estás buscando? (Ej: Café, Ropa...)">
-                <select id="filtro-categoria">
-                    <option value="todos">Todas las categorías</option>
-                    <option value="gastronomia">Gastronomía</option>
-                    <option value="servicios">Servicios</option>
-                    <option value="tiendas">Tiendas y Moda</option>
-                </select>
-            </div>
+    <main class="container">
+        <h2>Galería Interactiva de Tradiciones</h2>
+        
+        <div class="filter-controls">
+            <button class="btn active" data-filter="all">Ver Todo</button>
+            <button class="btn" data-filter="fiesta">Fiestas</button>
+            <button class="btn" data-filter="danza">Danzas</button>
         </div>
 
-        <div class="grid-negocios" id="grid-negocios">
-            
-            <div class="tarjeta-negocio" data-categoria="gastronomia">
-                <div class="imagen-negocio placeholder-cafe">☕</div>
-                <div class="info-negocio">
-                    <span class="categoria-tag">Gastronomía</span>
-                    <h3>Café "El Encuentro"</h3>
-                    <p>El mejor café artesanal con granos locales y repostería recién horneada todos los días.</p>
-                    <div class="contacto-negocio">
-                        <span>📍 Calle Principal #123</span>
-                        <span>📞 555-0192</span>
-                    </div>
-                    <a href="#" class="btn-visitar">Ver más</a>
+        <div class="gallery" id="traditionsGallery">
+            <div class="card" data-category="fiesta">
+                <div class="card-overlay">
+                    <h3>Fiesta Anual de Santiago Apóstol</h3>
+                    <p>Celebrada en julio con calendas, fuegos pirotécnicos y misas solemnes.</p>
                 </div>
             </div>
-
-            <div class="tarjeta-negocio" data-categoria="servicios">
-                <div class="imagen-negocio placeholder-taller">🛠️</div>
-                <div class="info-negocio">
-                    <span class="categoria-tag">Servicios</span>
-                    <h3>Taller Mecánico Astro</h3>
-                    <p>Reparación, mantenimiento preventivo y diagnóstico computarizado multimarca.</p>
-                    <div class="contacto-negocio">
-                        <span>📍 Av. Central #456</span>
-                        <span>📞 555-0483</span>
-                    </div>
-                    <a href="#" class="btn-visitar">Ver más</a>
+            <div class="card" data-category="danza">
+                <div class="card-overlay">
+                    <h3>Danza de los Matachines</h3>
+                    <p>Baile tradicional religioso lleno de misticismo, color y fe profunda.</p>
                 </div>
             </div>
-
-            <div class="tarjeta-negocio" data-categoria="tiendas">
-                <div class="imagen-negocio placeholder-moda">🛍️</div>
-                <div class="info-negocio">
-                    <span class="categoria-tag">Tiendas y Moda</span>
-                    <h3>Boutique Nueva Imagen</h3>
-                    <p>Ropa y accesorios en tendencia para toda la familia con sistema de apartado.</p>
-                    <div class="contacto-negocio">
-                        <span>📍 Centro Comercial Local, Local 5</span>
-                        <span>📞 555-0711</span>
-                    </div>
-                    <a href="#" class="btn-visitar">Ver más</a>
+            <div class="card" data-category="muertos">
+                <div class="card-overlay">
+                    <h3>Día de Muertos</h3>
+                    <p>Instalación de imponentes altares repletos de flor de cempasúchil y platillos tradicionales.</p>
                 </div>
             </div>
-
         </div>
-    </section>
+    </main>
 
-    <script src="negocios.js"></script>
+    <script src="costumbres.js"></script>
 </body>
 </html>
