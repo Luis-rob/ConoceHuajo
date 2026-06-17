@@ -79,7 +79,7 @@ h2 {
 }
 
 .card[data-category="fiesta"]{
-    background-image: url("fiesta.jpeg");
+    background-image: url("mini.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
