@@ -13,8 +13,8 @@ body {
 }
 
 .navbar {
-    position: fixed; top: 0; width: 90%; background: var(--secondary);
-    padding: 10px 25px; display: flex; justify-content: flex-start;
+    position: fixed; top: 0; width: 100%; background: var(--secondary);
+    padding: 15px 30px; display: flex; justify-content: flex-start;
     z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
