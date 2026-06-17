@@ -1,32 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const buscador = document.getElementById('buscador');
-    const filtroCategoria = document.getElementById('filtro-categoria');
-    const tarjetas = document.querySelectorAll('.tarjeta-negocio');
+    const buttons = document.querySelectorAll('.btn');
+    const cards = document.querySelectorAll('.card');
 
-    function filtrarNegocios() {
-        const textoBusqueda = buscador.value.toLowerCase();
-        const categoriaSeleccionada = filtroCategoria.value;
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            buttons.forEach(b => b.classList.remove('active'));
+            button.classList.add('active');
 
-        tarjetas.forEach(tarjeta => {
-            // Obtener el texto dentro de la tarjeta (Título y descripción)
-            const nombreNegocio = tarjeta.querySelector('h3').textContent.toLowerCase();
-            const descripcionNegocio = tarjeta.querySelector('p').textContent.toLowerCase();
-            const categoriaTarjeta = tarjeta.getAttribute('data-categoria');
+            const filterValue = button.getAttribute('data-filter');
 
-            // Condiciones de filtrado
-            const coincideTexto = nombreNegocio.includes(textoBusqueda) || descripcionNegocio.includes(textoBusqueda);
-            const coincideCategoria = categoriaSeleccionada === 'todos' || categoriaTarjeta === categoriaSeleccionada;
-
-            // Mostrar u ocultar según coincida con ambos filtros
-            if (coincideTexto && coincideCategoria) {
-                tarjeta.style.display = 'flex';
-            } else {
-                tarjeta.style.display = 'none';
-            }
+            cards.forEach(card => {
+                card.style.transform = 'scale(0.2)';
+                card.style.opacity = '0';
+                
+                setTimeout(() => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.transform = 'scale(1)';
+                            card.style.opacity = '1';
+                        }, 50);
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }, 400);
+            });
         });
-    }
-
-    // Escuchar eventos en tiempo real
-    buscador.addEventListener('input', filtrarNegocios);
-    filtroCategoria.addEventListener('change', filtrarNegocios);
+    });
 });
