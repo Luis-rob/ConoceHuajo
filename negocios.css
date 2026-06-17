@@ -93,14 +93,14 @@ h2 {
 }
 
 
-.card[data-category="danza"]{
+.card[data-category="farmacias"]{
     background-image: url("matachines.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.card[data-category="muertos"]{
+.card[data-category="comida"]{
     background-image: url("muertos.jpeg");
     background-size: cover;
     background-position: center;
