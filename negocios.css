@@ -78,12 +78,20 @@ h2 {
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card[data-category="fiesta"]{
+.card[data-category="tiendas"]{
     background-image: url("mini.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.card[data-category="tiendas"]{
+    background-image: url("depo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 .card[data-category="danza"]{
     background-image: url("matachines.jpeg");
